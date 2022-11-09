@@ -1,6 +1,6 @@
 #print(chr(1024))
 
-str='technology'
+str= input()
 
 print('original string '+str)
 
