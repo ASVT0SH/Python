@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+anonymous.ipynb
+pythonIA2.ipynb
+note1.ipynb
