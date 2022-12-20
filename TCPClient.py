@@ -1,11 +1,13 @@
-from socket import *
+"""TCP Client Example"""
+import socket
+import sys
 
-serverName = "servername"
-serverPort = 12000
-clientSocket = socket(AF_INET, SOCK_STREAM)
-clientSocket.connect((serverName, serverPort))
-sentence = r"Input lowercase sentence:"
-clientSocket.send(sentence)
-modifiedSentence = clientSocket.recv(1024)
-print("From Server:", modifiedSentence)
-clientSocket.close()
+host = "localhost"
+port = 50000
+size = 1024
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((host, port))
+s.send("Hello, world".tcpsocket)
+data = s.recv(size)
+s.close()
+print("Received:", data)
